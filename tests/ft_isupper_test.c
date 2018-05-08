@@ -11,5 +11,5 @@ int		main() {
 		printf("[%s]  ->  Test: %c\n", CHECK(ft_isupper(t[i]),
 											 (t[i] >= 'A' && t[i] <= 'Z')), t[i]);
 	printf("\n");
-	return (1);
+	return (0);
 }

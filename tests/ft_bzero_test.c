@@ -30,5 +30,5 @@ int		main() {
 		printf("[%s] Test 2  ->  index: %d/%d\n\n", C_RED"FAIL"C_NONE, i, 1000);
 	else
 		printf("[%s] Test 2  ->  Everything is OK!\n\n", C_CYAN"Good"C_NONE);
-	return (1);
+	return (0);
 }

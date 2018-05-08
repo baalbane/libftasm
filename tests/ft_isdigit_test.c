@@ -11,5 +11,5 @@ int		main() {
 		printf("[%s]  ->  Test: [%c]\n", CHECK(ft_isdigit(t[i]),
 								 (t[i] >= '0' && t[i] <= '9')), t[i]);
 	printf("\n");
-	return (1);
+	return (0);
 }

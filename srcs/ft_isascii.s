@@ -4,14 +4,20 @@ section	.text
 
 _ft_isascii:
 	mov			rax, 0
+	;xor			rdi, dil
+	mov			dil, 0
 	cmp			rdi, 0
-	js			nok
-	cmp			rdi, 128
-	js			ok	
+	jnz			nok
+	mov			rax, 1
 		
 nok:
 	ret
 
-ok:
-	mov			rax, 1
-	ret
+
+_ft_isascii2:
+	mov			rax, 0
+	cmp			rdi, 0
+	jl			nok
+	cmp			rdi, 128
+	jg			nok
+	mov			rax, 1	

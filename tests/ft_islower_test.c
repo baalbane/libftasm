@@ -11,5 +11,5 @@ int		main() {
 		printf("[%s]  ->  Test: %c\n", CHECK(ft_islower(t[i]),
 											 (t[i] >= 'a' && t[i] <= 'z')), t[i]);
 	printf("\n");
-	return (1);
+	return (0);
 }
